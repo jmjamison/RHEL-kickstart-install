@@ -1,3 +1,8 @@
+# Learning to setup an RHLE\Kickstart build
+
+- make a couple of ks.cfg files using kickstart generator <https://access.redhat.com/labs/kickstartconfig/>  
+- edit a version of sgurnick's kickstart file for the data archive
+
 # Vagrant Environment Build using Kickstart
 
 This describes a process for setting-up a local RHEL6 vagrant environment in macOS for testing Ansible using the following tools:
