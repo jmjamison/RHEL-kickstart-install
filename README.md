@@ -10,4 +10,4 @@
 - JKD or JDK 8: OpenJDK Runtime Env, 64-bit server VM  (I didn't install manually so must have been part of RHEL install)
 - Apache Tomcat 7 or 8: Tomcat 7.0.69 (I didn't install manually so must have been part of RHEL install)
 - tomcat-users.xml file: /usr/share/tomcat/conf/tomcat-users.xml, add the admin user<tomcat-users>
- '<user username="admin" password="password" roles="manager-gui,admin-gui"/>  </tomcat-users>'
+ \<user username="admin" password="password" roles="manager-gui,admin-gui"\/>  \</tomcat-users\>'
