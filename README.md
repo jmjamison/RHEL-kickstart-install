@@ -6,8 +6,9 @@
   - Database system / MySql server: mariadb because RHEL doesn't use Oracle MySQL, instead mariadb, will see how this works)  
   - it (mariadb) doesn't
       - remove mariadb (yum remove mariadb, yum clean all)
-      - download/add the mysql repo:  yum install mysql-community-{server,client,common,libs}-*
       - add EPEL epel-release-6-8.noarch.rpm (dependencies for mysql workbench)
+          - yum-config-manager --enable epel
+      - download/add the mysql repo:  yum install mysql-community-{server,client,common,libs}-*
       - install mysql workbench
           
 
