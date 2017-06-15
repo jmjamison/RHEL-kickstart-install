@@ -7,7 +7,8 @@
   - it (mariadb) doesn't
       - remove mariadb (yum remove mariadb, yum clean all)
       - download/add the mysql repo:  yum install mysql-community-{server,client,common,libs}-*
-      - add EPEL epel-release-6-8.noarch.rpm
+      - add EPEL epel-release-6-8.noarch.rpm (dependencies for mysql workbench)
+      - install mysql workbench
           
 
 
