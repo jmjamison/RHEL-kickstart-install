@@ -1,8 +1,14 @@
 # Setup for SDA server
 
 ## the LAMP stack:
-  - httpd (yum install httpd)
-  - php (yum install php php-pdo php-mysql php-mbstring* php-gd)  *php-mbstring not in RHEL repo
+  - httpd 
+      - yum install httpd
+      - systemctl enable httpd.service
+      - systemctl start httpd.service
+      - check 'localhost'
+  - php 
+      - yum install php php-pdo php-mysql php-mbstring* php-gd)  *php-mbstring not in RHEL repo
+      - test.php page '<?php phpinfo(); ?>'
   - Database system / MySql server: mariadb because RHEL doesn't use Oracle MySQL, instead mariadb, will see how this works)  
   - it (mariadb) doesn't
       - remove mariadb (yum remove mariadb, yum clean all)
@@ -10,6 +16,8 @@
           - yum-config-manager --enable epel
       - download/add the mysql repo:  yum install mysql-community-{server,client,common,libs}-*
       - install mysql workbench
+      
+     - WIERD-SHIT:  the mysql server 5.7.x generates a random password for the server. Find by "grep 'temporary password' /var/log/mysqld.log". Use that to log in and then chenge the password.
           
 
 
