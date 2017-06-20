@@ -10,7 +10,6 @@
       - yum install php php-pdo php-mysql php-mbstring* php-gd)  *php-mbstring not in RHEL repo
       - test.php page '<?php phpinfo(); ?>'
   - Database system / MySql server: mariadb because RHEL doesn't use Oracle MySQL, instead mariadb. According to Yutah/SDA, this hypothetically works with SDA but I ran into some issues - for now using MySQL and will try mariadb late
-  - MySQL
       - remove mariadb (yum remove mariadb, yum clean all)
       - add EPEL epel-release-6-8.noarch.rpm (dependencies for mysql workbench)
           - yum-config-manager --enable epel
