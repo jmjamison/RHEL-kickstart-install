@@ -26,7 +26,7 @@
       - download/add the mysql repo:  yum install mysql-community-{server,client,common,libs}-*
       - install mysql workbench
       
-     - WIERD-SHIT-to-be-aware-of:  the mysql server 5.7.x generates a random password for the server. Find by "grep 'temporary password' /var/log/mysqld.log". Use that to log in and then chenge the password.
+     - NOTE:  the mysql server 5.7.x generates a random password for the server. Find by "grep 'temporary password' /var/log/mysqld.log". Use that to log in and then chenge the password.
           
 
 
