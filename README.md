@@ -1,5 +1,12 @@
 # Setup for SDA server
 
+## add desktop Xfce - not essential but I like a simpler desktop  
+    - you will need the EPEL library, also for mysql   - add now if useing Xkfce 
+    - add EPEL epel-release-6-8.noarch.rpm (dependencies for mysql workbench)
+          - yum-config-manager --enable epel
+     
+    - yum install @xfce
+
 ## the LAMP stack:
   - httpd 
       - yum install httpd
