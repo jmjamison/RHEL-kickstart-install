@@ -48,3 +48,11 @@
 - tomcat-users.xmltomc file: /usr/share/tomcat/conf/tomcat-users.xml, add the admin user<tomcat-users>  
   \<user username="admin" password="password" roles="manager-gui,admin-gui"\/>  \</tomcat-users\>'
 - SDA docs, p.3 for starting or stoping tomcat, use 'tomcat stop/start/version' rather than what's in "documentation"
+
+### SDA files
+-- create in /var/www/ the sda folder
+-- in /var/www/sda create two folders   docs and sdaprogs
+    --- the sdaprogs.zip is unstipped int sda progs
+### sdamanager
+
+### sdaweb
