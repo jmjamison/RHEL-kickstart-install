@@ -49,10 +49,17 @@
   \<user username="admin" password="password" roles="manager-gui,admin-gui"\/>  \</tomcat-users\>'
 - SDA docs, p.3 for starting or stoping tomcat, use 'tomcat stop/start/version' rather than what's in "documentation"
 
+-- starting and stopping scripts:   startup.sh,  shutdown.sh are in /usr/share/tomcat/bin
+--  also in bin  .checkconfig.sh is useful for checing the setup 
+
 ### SDA files
 -- create in /var/www/ the sda folder
 -- in /var/www/sda create two folders   docs and sdaprogs
     --- the sdaprogs.zip is unstipped int sda progs
 ### sdamanager
+    - fill in from notes
 
 ### sdaweb
+    -- fill in from notes
+    
+
