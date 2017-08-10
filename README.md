@@ -39,7 +39,7 @@
 ## SDA install list (p.2 SDA setup "instructions")
 ### Java, JKD, etc
 - this one sill be a real adventure - finding the correct java and pointing sda at it
-- JKD or JDK 8: OpenJDK Runtime Env, 64-bit server VM  (I didn't install manually so must have been part of RHEL install)
+- JKD or JDK 8: OpenJDK Runtime Env, 64-bit server VM  - included in RHEL repo
   - set JAVA_HOME, created the setenv.sh file in /usr/share/tomcat/bin
 ### Apache Tomcat 
     - currently 7 or 8
