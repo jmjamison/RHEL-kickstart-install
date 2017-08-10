@@ -36,10 +36,13 @@
      
 
 
-## SDA install list (p.2 SDA setup "instructions"):
+## SDA install list (p.2 SDA setup "instructions"): Tomcat Server
 - JKD or JDK 8: OpenJDK Runtime Env, 64-bit server VM  (I didn't install manually so must have been part of RHEL install)
   - set JAVA_HOME, created the setenv.sh file in /usr/share/tomcat/bin
-- Apache Tomcat 7 or 8: Tomcat 7.0.69 (I didn't install manually so must have been part of RHEL install)
+- Apache Tomcat 7 or 8: - 
+ - DON'T use the tomcat install in RDEL. This will not work correctly or at all.
+ - DO USE the rpm from Apache site: <http://tomcat.apache.org/download-70.cgi> (site has downloads for v.7,8, 9) 
+ The apache packages includes the startup, shutdown files though you do have to create your own setenv script. (Currently keep a spare copy of this as backup.
 - tomcat-users.xmltomc file: /usr/share/tomcat/conf/tomcat-users.xml, add the admin user<tomcat-users>  
   \<user username="admin" password="password" roles="manager-gui,admin-gui"\/>  \</tomcat-users\>'
 - SDA docs, p.3 for starting or stoping tomcat, use 'tomcat stop/start/version' rather than what's in "documentation"
